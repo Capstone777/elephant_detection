@@ -1,5 +1,53 @@
-# 🐘 YOLO Elephant Detection Overview
-This project utilizes the YOLO (You Only Look Once) object detection algorithm, which is known for its speed and accuracy in real-time detection tasks. The YOLO model has been trained specifically to detect elephants in images. By leveraging deep learning and convolutional neural networks (CNNs), the model learns to recognize the shape, size, and features of elephants from a dataset of labeled images. Once trained, YOLO can quickly scan new images and draw bounding boxes around any detected elephants with high confidence.
+## 🐘 YOLO Elephant Detection Overview
+This project utilizes the YOLO object detection algorithm, known for its real-time performance and high accuracy. The model has been trained to specifically identify elephants in images by learning features such as shape, color, and texture from a labeled dataset.
 
-This code allows you to detect elephants in any given image using a trained YOLO model. To use it, simply place your image in a folder (e.g., input/) and provide the image path as input when running the script. The script loads the YOLO model weights, processes the image, detects elephants, and then saves the output image with bounding boxes around the detected elephants in the output/ folder. You can customize the input and output paths as needed. It’s a straightforward way to test your YOLO model on single images for elephant detection.
+Elephant detection can be used in wildlife conservation, research, and monitoring environments. This tool helps automate the process of identifying elephants in large image datasets, reducing manual effort and increasing efficiency. The model can be fine-tuned with more data to improve accuracy across different terrains and lighting conditions.
 
+# 🔍 How the Code Works
+The script loads a pre-trained YOLO model with custom weights (best.pt).
+
+It reads an input image from a specified path.
+
+The YOLO model performs inference to detect elephants.
+
+The output image, with bounding boxes drawn around detected elephants, is saved to the output directory.
+
+# 🛠️ Installation
+Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/yolo-elephant-detection.git
+cd yolo-elephant-detection
+Install dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+# ▶️ Usage
+Run the detection script with:
+
+bash
+Copy
+Edit
+python detect.py --source input/image.jpg --weights weights/best.pt --output output/
+Arguments:
+
+--source: Path to the input image
+
+--weights: Path to the YOLO model weights
+
+--output: Folder where results will be saved
+
+# 📁 Project Structure
+graphql
+Copy
+Edit
+├── input/              # Folder for input images
+├── output/             # Folder for output images with detections
+├── weights/            # Folder for trained YOLO weights (e.g., best.pt)
+├── detect.py           # Main detection script
+├── requirements.txt    # Required Python packages
+└── README.md           # Project documentation
