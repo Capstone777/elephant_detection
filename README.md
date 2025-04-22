@@ -1,4 +1,4 @@
-#🐘 YOLO Elephant Detection Overview
+# 🐘 YOLO Elephant Detection Overview
 This project utilizes the YOLO (You Only Look Once) object detection algorithm, which is known for its speed and accuracy in real-time detection tasks. The YOLO model has been trained specifically to detect elephants in images. By leveraging deep learning and convolutional neural networks (CNNs), the model learns to recognize the shape, size, and features of elephants from a dataset of labeled images. Once trained, YOLO can quickly scan new images and draw bounding boxes around any detected elephants with high confidence.
 
 This code allows you to detect elephants in any given image using a trained YOLO model. To use it, simply place your image in a folder (e.g., input/) and provide the image path as input when running the script. The script loads the YOLO model weights, processes the image, detects elephants, and then saves the output image with bounding boxes around the detected elephants in the output/ folder. You can customize the input and output paths as needed. It’s a straightforward way to test your YOLO model on single images for elephant detection.
